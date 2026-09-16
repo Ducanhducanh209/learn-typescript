@@ -8,13 +8,48 @@ var productRate;
 const product = {
     name: "laptop",
     rate: productRate.low,
+    sale: false,
     price: 100
 };
 console.log(product);
 const listProduct = [
     {
-        name: "laptop",
-        rate: productRate.low,
-        price: 100
+        name: "Laptop",
+        price: 3,
+        sale: false,
+        rate: productRate.medium
     },
+    {
+        name: "Điện thoại",
+        price: 4,
+        sale: false,
+        rate: productRate.medium
+    },
+    {
+        name: "Chuột",
+        price: 10,
+        sale: true,
+        rate: productRate.hight
+    },
+    {
+        name: "Bàn phím",
+        price: 3,
+        sale: false,
+        rate: productRate.medium
+    },
+    {
+        name: "Tai nghe",
+        price: 1,
+        sale: true,
+        rate: productRate.low
+    }
 ];
+function themPhanTu(list) {
+    return list.map((product) => {
+        return {
+            ...product,
+            description: product.price > 5 ? "Tốt" : "Bình thường"
+        };
+    });
+}
+console.log(themPhanTu(listProduct));

@@ -1,0 +1,26 @@
+console.log("typescript");
+
+let age: number = 25;
+age = 30;
+
+let myName: string = "hoadv";
+myName = "20";
+
+let dihockhong: boolean = true;
+dihockhong = false;
+
+let myYear = 2005;
+// myYear = "20008"; => error
+
+// object: chua nhieu thuoc tinh
+const student: { name: string; age: number; isActive: boolean } = {
+  name: "hoadv",
+  age: 34,
+  isActive: true,
+};
+
+// enum
+enum status {
+  done = "hoàn thành",
+  doing = "đang làm",
+}

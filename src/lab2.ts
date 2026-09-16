@@ -21,5 +21,7 @@ const product:{name:string; rate: productRate; price: number} = {
      name: "laptop",
     rate: productRate.low,
     price: 100
-    }
-   ]
+    },
+
+   ];
+  

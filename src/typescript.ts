@@ -24,3 +24,8 @@ enum status {
   done = "hoàn thành",
   doing = "đang làm",
 }
+
+// array: []: nhieu phan tu
+const numbers: number[] = [1, 2, 3, 4];
+const students: string[] = ["nam", "an"];
+const products: { name: string }[] = [{ name: "laptop" }, { name: "laptop" }];

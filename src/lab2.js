@@ -53,6 +53,8 @@ function themPhanTu(list) {
     });
 }
 console.log(themPhanTu(listProduct));
+
+
 function tongGiaBan(product) {
     return product.reduce((tong, product) => tong + product.price, 0);
 }

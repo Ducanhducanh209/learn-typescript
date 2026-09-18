@@ -37,3 +37,10 @@ let data: any = "data"
 //Union và Literal Type
 let result: string | number ="ket qua";
 result = 3;
+
+//literial : |
+let doSomething: "success" | "error" = "success"
+
+// null va undefined
+
+let value: null | undefined;

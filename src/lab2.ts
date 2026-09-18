@@ -67,3 +67,29 @@ function themPhanTu(list: Product[]) {
 }
 
 console.log(themPhanTu(listProduct));
+
+
+
+function tongGiaBan(product : Product[]) : number{
+     return product.reduce((tong,product) => tong + product.price, 0);
+}
+
+console.log("Tong gia ban", tongGiaBan(listProduct));
+
+
+
+
+
+
+function locSanPham(product: Product[]): Product[] {
+    return product.filter(product =>
+        product.sale === true &&
+        (
+            product.rate === productRate.medium ||
+            product.rate === productRate.hight
+        )
+    );
+}
+
+console.log("San pham trung binh tro len:");
+console.log(locSanPham(listProduct));

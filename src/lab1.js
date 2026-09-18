@@ -6,8 +6,6 @@ function chuvihcn(chieudai, chieurong) {
 console.log(chuvihcn(3, 4));
 // 2. Viết 1 hàm tính tổng nhiều số
 // Không biết trước số lượng tham số, sử dụng rest parameter
-// 2. Viết 1 hàm tính tổng nhiều số
-// Không biết trước số lượng tham số, sử dụng rest parameter
 function tinhtong(...numbers) {
     let tong = 0;
     for (let i = 0; i < numbers.length; i++) {

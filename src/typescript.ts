@@ -29,3 +29,11 @@ enum status {
 const numbers: number[] = [1, 2, 3, 4];
 const students: string[] = ["nam", "an"];
 const products: { name: string }[] = [{ name: "laptop" }, { name: "laptop" }];
+
+
+//any : ko qtam kieu du lieu, code js
+let data: any = "data"
+
+//Union và Literal Type
+let result: string | number ="ket qua";
+result = 3;

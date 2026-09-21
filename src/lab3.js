@@ -42,6 +42,17 @@ function createUser(name, age, role = "user") {
 }
 console.log(createUser("đức anh"));
 console.log(createUser("nam", 25, "ad"));
-
-
-
+//Hàm xử lý danh sách sản phẩm (Spread + Rest)
+function mergeProducts(a, b) {
+    return [...a, ...b];
+}
+function printProducts(...product) {
+    for (let p of product) {
+        console.log(p);
+    }
+}
+const a = ["iphone", "samsung"];
+const b = ["xiaomi", "huawei"];
+const result = mergeProducts(a, b);
+console.log(result);
+printProducts(...result);

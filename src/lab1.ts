@@ -13,7 +13,7 @@ function tinhtong(...numbers: number[]) {
   let tong = 0;
 
   for (let i = 0; i < numbers.length; i++) {
-    tong += numbers[i];
+    tong += numbers[i]!;
   }
 
   return tong;

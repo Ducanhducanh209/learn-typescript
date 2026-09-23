@@ -77,3 +77,14 @@ type Status = "loading" | "succes" | "erroe";
   LogStatus("erroe");
 
   //bai5
+  function identity<T>(value: T): T {
+    return value;
+}
+
+const numberValue = identity<number>(123);
+const stringValue = identity<string>("Nguyễn Đức Anh");
+const booleanValue = identity<boolean>(true);
+
+console.log(numberValue);
+console.log(stringValue);
+console.log(booleanValue);

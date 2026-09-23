@@ -59,3 +59,21 @@ class Student{
 
 const hs=  new Student( 123,"nguyen duc anh");
 hs.display();
+
+//bai 4
+
+type Status = "loading" | "succes" | "erroe";
+  function LogStatus(status : Status): void{
+    if(status === "loading"){
+        console.log("đang tải");
+    }else if(status==="succes"){
+        console.log("thanh cong");
+    }else{
+        console.log("lỗi");
+    }
+  }
+  LogStatus("loading");
+  LogStatus("succes");
+  LogStatus("erroe");
+
+  //bai5
